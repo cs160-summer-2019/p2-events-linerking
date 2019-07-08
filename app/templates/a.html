@@ -63,7 +63,26 @@
 
 
 <script type="text/javascript">
-	// your solution here
+$('.p2-circle.bg-purple').click(function(){
+  $('.p2-circle.bg-purple').hide();
+});
+  
+$('.p2-circle.bg-green').click(function(){
+  $('.p2-circle.bg-green,.p2-circle.bg-blue').hide();
+});
+  
+$('.p2-circle.bg-orange.p2-border').click(function(){
+  $('.p2-circle.bg-orange.p2-border').hide();
+});
+  
+$('.p2-circle#gradient-circle').mouseenter(function(){
+  $(this).hide();
+});
+  
+$('.btn.btn-light.float-right').click(function(){
+  $('.p2-circle.bg-purple,.p2-circle.bg-green,.p2-circle.bg-blue,.p2-circle.bg-orange.p2-border,.p2-circle#gradient-circle').show();
+});
+  
 
 </script>
 </body>
